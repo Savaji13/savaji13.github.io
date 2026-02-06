@@ -30,6 +30,7 @@ function updateResources() {
     (category === "all" || r.category === category)
   )
   displayResources(filtered)
+  // I gotta remember to add a "you did something!" notification for this I swear I despise Javascript as is
 }
 
 
