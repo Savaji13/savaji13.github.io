@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community Resource Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<header>
+  <nav>
+    <h1>Community Hub</h1>
+    <ul>
+      <li><a href="#directory">Resources</a></li>
+      <li><a href="#highlights">Highlights</a></li>
+      <li><a href="#submit">Submit</a></li>
+    </ul>
+  </nav>
+
+
+  <div class="hero">
+    <div class="hero-box">
+      <h2>Community Resource Hub</h2>
+      <p>A centralized library of local services, programs, and organizations designed to support and strengthen our community.</p>
+    </div>
+    <div class="hero-box">
+      <p>Search, filter, and contribute trusted community resources to keep everyone informed and connected.</p>
+    </div>
+  </div>
+</header>
+
+
+<section id="directory">
+  <h3>Resource Directory</h3>
+  <div class="controls">
+    <input type="text" id="search" placeholder="Search resources">
+    <select id="filter">
+      <option value="all">All Categories</option>
+      <option value="Health">Health</option>
+      <option value="Education">Education</option>
+      <option value="Housing">Housing</option>
+      <option value="Food">Food</option>
+    </select>
+  </div>
+  <div class="grid" id="resourceGrid"></div>
+</section>
+
+
+<section id="highlights">
+  <h3>Highlighted Resources</h3>
+  <div class="grid">
+    <div class="card highlight">
+      <span class="tag">Health</span>
+      <h4>Community Health Center</h4>
+      <p>Affordable healthcare services and wellness programs.</p>
+    </div>
+    <div class="card highlight">
+      <span class="tag">Education</span>
+      <h4>Youth Learning Program</h4>
+      <p>After-school tutoring and academic support.</p>
+    </div>
+    <div class="card highlight">
+      <span class="tag">Food</span>
+      <h4>Neighborhood Food Pantry</h4>
+      <p>Weekly food distribution for families in need.</p>
+    </div>
+  </div>
+</section>
+
+
+<section id="submit">
+  <h3>Submit a New Resource</h3>
+  <form id="resourceForm">
+    <label>Name</label>
+    <input type="text" id="name" required>
+
+
+    <label>Description</label>
+    <textarea id="description" required></textarea>
+
+
+    <label>Category</label>
+    <select id="category">
+      <option value="Health">Health</option>
+      <option value="Education">Education</option>
+      <option value="Housing">Housing</option>
+      <option value="Food">Food</option>
+    </select>
+
+
+    <button type="submit">Submit Resource</button>
+  </form>
+</section>
+
+
+<footer>
+  <p>Community Resource Hub</p>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
