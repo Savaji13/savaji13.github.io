@@ -1,104 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Community Resource Hub</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Cyber Resource Hub</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-
-<header>
-  <nav>
-    <h1>Community Hub</h1>
-    <ul>
-      <li><a href="#directory">Resources</a></li>
-      <li><a href="#highlights">Highlights</a></li>
-      <li><a href="#submit">Submit</a></li>
-    </ul>
-  </nav>
-
-
-  <div class="hero">
-    <div class="hero-box">
-      <h2>Community Resource Hub</h2>
-      <p>A centralized library of local services, programs, and organizations designed to support and strengthen our community.</p>
-    </div>
-    <div class="hero-box">
-      <p>Search, filter, and contribute trusted community resources to keep everyone informed and connected.</p>
-    </div>
-  </div>
+<header class="navbar">
+    <h1 class="logo">CyberCentral</h1>
+    <nav class="nav-buttons">
+        <a href="index.html" class="nav-btn active">Home</a>
+        <a href="directory.html" class="nav-btn">Resources</a>
+        <a href="worklog.html" class="nav-btn">Work Log</a>
+        <a href="reference.html" class="nav-btn">Reference</a>
+    </nav>
 </header>
 
-
-<section id="directory">
-  <h3>Resource Directory</h3>
-  <div class="controls">
-    <input type="text" id="search" placeholder="Search resources">
-    <select id="filter">
-      <option value="all">All Categories</option>
-      <option value="Health">Health</option>
-      <option value="Education">Education</option>
-      <option value="Housing">Housing</option>
-      <option value="Food">Food</option>
-    </select>
-  </div>
-  <div class="grid" id="resourceGrid"></div>
+<section class="hero">
+    <div class="hero-overlay">
+        <h2>Library of Modern Cybersecurity Resources</h2>
+        <p>
+            Explore trusted cybersecurity tools, organizations, and programs designed to help individuals 
+            stay safe online. Learn about data protection, cyber threats, and digital safety practices.
+        </p>
+        <a href="directory.html" class="btn">View Resources</a>
+    </div>
+    <div class="scroll-text">SCROLL DOWN</div>
 </section>
 
-
-<section id="highlights">
-  <h3>Highlighted Resources</h3>
-  <div class="grid">
-    <div class="card highlight">
-      <span class="tag">Health</span>
-      <h4>Community Health Center</h4>
-      <p>Affordable healthcare services and wellness programs.</p>
+<section class="highlights">
+    <h2>Featured Cyber Resources</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Stay Safe Online</h3>
+            <p>National Cybersecurity Alliance tips and programs for online safety.</p>
+            <a href="https://staysafeonline.org/" target="_blank" class="btn">Visit Website</a>
+        </div>
+        <div class="card">
+            <h3>CISA Alerts</h3>
+            <p>Official US government resources to stay informed about cyber threats.</p>
+            <a href="https://www.cisa.gov/" target="_blank" class="btn">Visit Website</a>
+        </div>
+        <div class="card">
+            <h3>Krebs on Security</h3>
+            <p>Blog by Brian Krebs covering cybercrime and online security news.</p>
+            <a href="https://krebsonsecurity.com/" target="_blank" class="btn">Visit Website</a>
+        </div>
     </div>
-    <div class="card highlight">
-      <span class="tag">Education</span>
-      <h4>Youth Learning Program</h4>
-      <p>After-school tutoring and academic support.</p>
-    </div>
-    <div class="card highlight">
-      <span class="tag">Food</span>
-      <h4>Neighborhood Food Pantry</h4>
-      <p>Weekly food distribution for families in need.</p>
-    </div>
-  </div>
 </section>
 
-
-<section id="submit">
-  <h3>Submit a New Resource</h3>
-  <form id="resourceForm">
-    <label>Name</label>
-    <input type="text" id="name" required>
-
-
-    <label>Description</label>
-    <textarea id="description" required></textarea>
-
-
-    <label>Category</label>
-    <select id="category">
-      <option value="Health">Health</option>
-      <option value="Education">Education</option>
-      <option value="Housing">Housing</option>
-      <option value="Food">Food</option>
-    </select>
-
-
-    <button type="submit">Submit Resource</button>
-  </form>
+<section class="form-section">
+    <h2>Suggest a Cyber Resource</h2>
+    <form id="resourceForm">
+        <input type="text" placeholder="Resource Name" required>
+        <input type="text" placeholder="Category" required>
+        <textarea placeholder="Description"></textarea>
+        <button type="submit" class="btn">Submit Resource</button>
+    </form>
 </section>
-
-
-<footer>
-  <p>Community Resource Hub</p>
-</footer>
-
 
 <script src="script.js"></script>
 </body>
